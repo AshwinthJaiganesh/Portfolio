@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Ashwinth</title>
+    <!-- imported from boxicons.usage   for box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <!-- imported from boxicons.com search menu then font -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Projects</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#academics">Academics</a>
+            <a href="#skillstrength">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hellow, It's Me</h3>
+            <h1>ASHWINTH M</h1>
+
+            <!-- ---------  multiple words-typed js (present bt span)--------- -->
+            <h3> I'm a <span class="multiple-text"></span> </h3>
+
+            <p>"I am a highly skilled developer with extensive knowledge in JAVA
+                programming language. I have a good understanding of database concepts, specifically
+                in SQL. Additionally, I am proficient in front-end technologies such as HTML, CSS, and
+                JavaScript. My goal is to leverage my expertise in these areas to contribute
+                significantly to the technology industry. I am committed to continuous learning,
+                staying updated with industry trends, and collaborating with seasoned developers to
+                further enhance my skills in Java development and front-end web development."</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ashwinthm/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/AshwinthJaiganesh"><i class='bx bxl-github'></i></a>
+                <a href="tel:+918940764260"><i class='bx bxs-phone-call'></i></a>
+                <a href="mailto:ashwinthjaiganesh2965@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <!-- commented the youtube download cv link----- -->
+            <!-- <a href="#" class="btn">Download CV</a> -->
+
+            <!-- -------to download Resume hosted in Github------- -->
+            <button class="btn" onclick="btn()">Download Resume</button>
+            <!-- -----------JS----------- -->
+            <script>
+                function btn() {
+                    var githubLink = 'https://github.com/AshwinthJaiganesh/PdfViewer/blob/main/ASHWINTH%20M.pdf';
+                    var rawLink = githubLink.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+                    window.open(rawLink, '_blank');
+                }
+            </script>
+
+        </div>
+        <div class="home-img">
+            <img src="Ashwinth-home1.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Ashwinth-home.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>ASHWINTH M</h3>
+
+            <p id="about-me" class="partial-para">I am Ashwinth, a hardworking engineering student, specialized in
+                Electrical and Electronics Engineering at Chennai Institute of Technology.
+                &nbsp;I'm a final year student with a solid academic foundation and a keen interest in Java programming.
+                Alongside my studies, I have successfully completed a course in <span>Core Java</span> &nbsp;,
+                demonstrating
+                my eagerness to excel in this language. <br> This experience showcases my ability to handle multiple
+                responsibilities concurrently, underscoring my effective time management skills. As I approach the
+                culmination of my studies, I am enthusiastic about leveraging my expertise in Java and continuing to
+                expand my knowledge. I am eager to contribute my skills and dedication to a dynamic and growth-oriented
+                organization as I embark on my journey as a professional developer.
+            </p>
+
+            <a href="#about-me" class="btn" onclick="toggleVisibility(this)"><span id="button-text">Read More</span></a>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">Core <span>Projects</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-wifi'></i>
+                <h3>IOT BASED HOME AUTOMATION</h3>
+                <p id="iot">Control multiple home appliances securely from our mobile phone through
+                    the internet.
+                    IoT-based home automation refers to the integration of smart devices
+                    and systems to control and automate various aspects of a home, such
+                    as lighting, appliances, security, and energy management. It enables
+                    remote monitoring and control of home devices through internet
+                    connectivity, enhancing convenience, energy efficiency, and security
+                    for homeowners.
+
+                <ul class="iot-li">
+                    <h2 class="iot-components">Components Used :</h2>
+
+                    <li class="i">
+                        <div class="iot-head">Relay Module :</div> Enable communication between the IoT system and
+
+                        external devices or the internet.
+                    </li>
+                    <li>
+                        <div class="iot-head">Microcontroller(ESP 8622) :</div> This serves as the brain of the system
+                        and controls the overall operation.
+                    </li>
+                    <li>
+                        <div class="iot-head">Blynk app :</div> A user interface allows users to interact with the
+                        system.
+                    </li>
+                </ul>
+
+
+                </p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-microchip'></i>
+                <h3>DIGITAL DISTANCE MEASURING DEVICE</h3>
+                <p id="digitai">Measuring distance between two objects using pulses
+                    of Ultrasonic waves emitted by Ultrasonic sensor.
+
+                    A digital distance measuring device uses ultrasonic waves to determine
+                    the distance between the device and an object. It emits ultrasonic
+                    waves, measures the time it takes for the waves to bounce back, and
+                    calculates the distance based on the time and speed of sound.
+                <ul class="digital-ul">
+                    <h2 class="digi-head">Components Used:</h2>
+                    <li class="digi-i">
+                        <div class="digi-div">Ultrasonic Sensor :</div>
+                        This sensor emits ultrasonic waves and measures the time it takes for the waves to bounce back
+                        after hitting an object, allowing distance calculation.
+                    </li>
+                    <li>
+                        <div class="digi-div">Arduino UNO :</div>It is responsible for processing the sensor data,
+                        performing calculations, and controlling the device's operation.
+                    </li>
+                    <li>
+                        <div class="digi-div">LCD Display(16*2) :</div>To show the measured distance or other relevant
+                        information.
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+
+
+            <div class="services-box">
+                <i class='bx bx-bell-minus'></i>
+                <h3>GAS DETECTION SYSTEM</h3>
+                <p id="wed">Gas leak detection is the process of identifying potentially hazardous gas leaks by means of
+                    various sensors
+                    It acts as a part of a safety system
+                    These sensors usually employ an audible alarm to alert people when a dangerous gas has been
+                    detected.
+
+
+
+                <ul class="web-ul">
+                    <h2 class="web-h2"> Components Used : </h2>
+                    <li class="web-li">
+                        <div class="web-div">Arduino UNO :
+                        </div>
+                        It is responsible for processing the sensor data,
+                        performing calculations, and controlling the device's operation.
+                    </li>
+                    <li>
+                        <div class="web-div">MQ-2 Gas Sensor :</div>
+                        It can detect multiple gases.It's sensing is based on the charge in
+                        resistance of the sensing material when exposed to gasses.
+                    </li>
+
+                    <li>
+                        <div class="web-div">LED :
+                        </div>It is used to provide visual warning signals
+                        when gas levels exceed predefined thresholds.
+                    </li>
+
+                    <li>
+                        <div class="web-div">BUZZER :
+                        </div>
+                        To provide audible and visual warnings when gas levels exceed preset
+                        thresholds.
+
+
+                    </li>
+
+                </ul>
+
+
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- service section design -->
+
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Interactive Portfolio</h4>
+                    <p>
+                        I have developed a web page using HTML, CSS, and JavaScript
+                        that serves as my portfolio. The page features numerous
+                        animations to enhance the user experience and create an
+                        interactive interface.</p>
+                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+
+
+            <div class="portfolio-box">
+                <img src="portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Portfolio</h4>
+                    <p>Designed and developed portfolio website using HTML and CSS,
+                        featuring an interactive interface.
+                        Discover my projects and expertise presented in an engaging and
+                        visually captivating portfolio website.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/basic-portfolio/"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ecommerce Websit</h4>
+                    <p>Crafted a visually appealing website using HTML,
+                        CSS, and JavaScript. Implemented a user-friendly interface with
+                        an engaging design elements and Streamlined checkout process for
+                        a smooth user experience.</p>
+                    <a href="https://ashwinthjaiganesh.github.io/ecommerce/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Login-Page</h4>
+                    <p> Bulit a Login-page using HTML, CSS and JS
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/login-page/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Front-end web development project</h4>
+                    <p> Bulit a website using HTML and CSS implementing the user
+                        interface.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/front-end-pro/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Front-end web development project</h4>
+                    <p> Bulit a website using HTML and CSS implementing the user
+                        interface.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/login-page/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="services" id="academics">
+        <h2 class="heading">Academic <span>Achievements!</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>Degree</h3>
+                <p>Bachelor of Engineering (BE) <br>
+                    Specialization: Electrical and Electronics Engineering <br>
+                    Chennai Institute of Technology <br>
+                    Kundrathur, Chennai <br>
+                    BATCH: &nbsp;2020-2024 <br>
+                    <b>CGPA:8.35</b> (upto 6th semester)
+                </p>
+
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-school'></i>
+                <h3>HSC</h3>
+                <p>
+                    I did my 11th and 12th grade at <br>
+                    <b>DRBCCC</b> <br>Hindu Higher Secondary School, <br>
+                    Thiruvallur. <br>specialized in Bio-Maths.
+                    <br>I achieved an overall
+                    percentage of 61. <br>
+                    % MARKS : 61
+
+
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-book-open'></i>
+                <h3>SSLC</h3>
+                <p>I studied in <br> <b>St Mary's Matriculation <br>
+                        Higher Secondary School</b>,<br> Sriperumbudur, &nbsp;
+                    Kanchipuram. <br>
+                    studied there until 10th grade. <br>
+                    I achieved an overall percentage of 87.4 <br>
+                    % MARKS: 87.4
+                </p>
+
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="skillstrength">
+        <div class="about-img">
+            <img class="ash" src="ASHWINTH.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>My</span></h2>
+            <h3> Strength and Skills...</h3>
+            <p id="about-my" class="about-my">
+            <h3 id="skill-h3" class="skill-class">Strength<span>'s</span></h3>
+
+            <div id="strength-p">
+                <ul id="strength-ul">
+                    <li>I have tendency to withstand any changes in my
+                        environment.
+                    </li>
+                    <li>I am versed in understanding core
+                        concepts and implementing it.</li>
+                    <li> I maintain a comfortable workspace around me
+                        and for my colleags.</li>
+                    <li>Teamwork and collaboration</li>
+                    <li>Time management</li>
+                    <li>Positive attitude</li>
+                </ul>
+            </div>
+            <br>
+            <!-- <br> -->
+            <ul id="skill-id">
+                <h3 id="skill-h3">Skills <span>'s</span></h3>
+                <li>Core JAVA</li>
+                <li>Java Data Structures and Algorithms (DSA)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript </li>
+                <li>MS Office</li>
+                <li>Critical Thinking</li>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <br>
+            </ul>
+            <ul id="skill-id">
+                <h3 id="skill-h3">Certificatoin <span>'s</span></h3>
+                <li> I completed a course in core java, and I have a very good
+                    knowledge on Basic Java, OOPs concept and DSA. </li>
+            </ul>
+            </p>
+            <!-- <a href="#about-me" class="btn" onclick="toggleVisibility(this)"><span id="button-text">Read More</span></a> -->
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="send_message.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Contact &nbsp;: &nbsp; ashwinthjaiganesh2965@gmail.com | ashwinthm.eee2020@citchennai.net</p> <br>
+            <p>Copyrigth &copy; 2023 by Ashwinth | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i> </a>
+        </div>
+    </footer>
+
+
+    <!-- ---------scroll reveal--------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- -------------typed JS--------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom JS -->
+    <script src="port.js"></script>
+</body>
+
+
+</html>
