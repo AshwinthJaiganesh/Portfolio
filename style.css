@@ -690,9 +690,9 @@ these changes occur in the website */
         width: 90vw;
     }
 
-    .footer {
+/*     .footer {
         flex-direction: column-reverse;
-    }
+    } */
 
     .footer p {
         text-align: center;
