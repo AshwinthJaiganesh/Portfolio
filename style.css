@@ -721,3 +721,30 @@ section {
     min-height: auto;
     padding: 10rem 9% 5rem;
 }
+
+/* DARK LIGHT MODE */
+.light-mode {
+    --bg-color: #ffffff;
+    --second-bg-color: #f2f2f2;
+    --text-color: #000;
+}
+
+/* POPUP */
+#popup-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
