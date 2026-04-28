@@ -1,131 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashwinth Portfolio</title>
 
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Ashwinth</title>
+    <!-- imported from boxicons.usage   for box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <!-- imported from boxicons.com search menu then font -->
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-<header class="header">
-    <h2>Ashwinth</h2>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Projects</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#academics">Academics</a>
+            <a href="#skillstrength">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-    </nav>
+    <!-- home section -->
 
-    <button id="theme-btn">🌙</button>
-</header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hellow, It's Me</h3>
+            <h1>ASHWINTH M</h1>
 
-<!-- HOME -->
-<section id="home" class="fade">
-<h1>ASHWINTH M</h1>
-<h3>Software Engineer – IBM Maximo</h3>
-<p>Specialized in Maximo EAM, SQL troubleshooting and enterprise systems.</p>
+            <!-- ---------  multiple words-typed js (present bt span)--------- -->
+            <h3> I'm a <span class="multiple-text"></span> </h3>
 
-<a href="https://raw.githubusercontent.com/AshwinthJaiganesh/Portfolio/main/ASHWINTH_M_RESUME.pdf"
-class="btn">Download Resume</a>
+            <p>I am a Software Engineer at Capgemini specializing in IBM Maximo EAM.
+               I work on production support, incident management, and backend troubleshooting using SQL.
+
+               I have hands-on experience in modules like Work Order and Asset Management,
+               ensuring smooth enterprise operations.
+
+               Previously, I worked in the solar domain designing residential systems using BricsCAD.
+
+               I am focused on building expertise in enterprise applications and continuously improving my technical skills.</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ashwinthm/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/AshwinthJaiganesh"><i class='bx bxl-github'></i></a>
+                <a href="tel:+918940764260"><i class='bx bxs-phone-call'></i></a>
+                <a href="mailto:ashwinthjaiganesh2965@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <!-- commented the youtube download cv link----- -->
+            <!-- <a href="#" class="btn">Download CV</a> -->
+
+            <!-- -------to download Resume hosted in Github------- -->
+            <button class="btn" onclick="btn()">Download Resume</button>
+            <!-- -----------JS----------- -->
+            <script>
+                function btn() {
+                    var githubLink = 'https://github.com/AshwinthJaiganesh/Resume/blob/main/ASHWINTH%20M.pdf';
+                    var rawLink = githubLink.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+                    window.open(rawLink, '_blank');
+                }
+            </script>
+
+        </div>
+        <div class="home-img">
+            <img src="Ashwinth-home1.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Ashwinth-home.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>ASHWINTH M</h3>
+
+<p id="about-me" class="partial-para">
+I am a Software Engineer with experience in IBM Maximo EAM, working on enterprise asset management systems.
+
+At Capgemini, I handle incident tickets, perform root cause analysis, and resolve issues using SQL and Maximo UI.
+I have worked on modules like Work Order Management and Asset Management.
+
+Previously, I worked as a Solar Design Engineer at Illumine, where I designed residential solar systems using BricsCAD.
+
+I have a strong foundation in Java, SQL, and frontend technologies, and I am focused on growing in enterprise software and Maximo domain.
+</p>
+
+            <a href="#about-me" class="btn" onclick="toggleVisibility(this)"><span id="button-text">Read More</span></a>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">Core <span>Projects</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-wifi'></i>
+                <h3>IOT BASED HOME AUTOMATION</h3>
+                <p id="iot">Control multiple home appliances securely from our mobile phone through
+                    the internet.
+                    IoT-based home automation refers to the integration of smart devices
+                    and systems to control and automate various aspects of a home, such
+                    as lighting, appliances, security, and energy management. It enables
+                    remote monitoring and control of home devices through internet
+                    connectivity, enhancing convenience, energy efficiency, and security
+                    for homeowners.
+
+                <ul class="iot-li">
+                    <h2 class="iot-components">Components Used :</h2>
+
+                    <li class="i">
+                        <div class="iot-head">Relay Module :</div> Enable communication between the IoT system and
+
+                        external devices or the internet.
+                    </li>
+                    <li>
+                        <div class="iot-head">Microcontroller(ESP 8622) :</div> This serves as the brain of the system
+                        and controls the overall operation.
+                    </li>
+                    <li>
+                        <div class="iot-head">Blynk app :</div> A user interface allows users to interact with the
+                        system.
+                    </li>
+                </ul>
+
+
+                </p>
+            </div>
+<!-- ----------------------------------------------------- -->
+            <div class="services-box">
+                <i class='bx bx-microchip'></i>
+                <h3>DIGITAL DISTANCE MEASURING DEVICE</h3>
+                <p id="digitai">Measuring distance between two objects using pulses
+                    of Ultrasonic waves emitted by Ultrasonic sensor.
+
+                    A digital distance measuring device uses ultrasonic waves to determine
+                    the distance between the device and an object. It emits ultrasonic
+                    waves, measures the time it takes for the waves to bounce back, and
+                    calculates the distance based on the time and speed of sound.
+                <ul class="digital-ul">
+                    <h2 class="digi-head">Components Used:</h2>
+                    <li class="digi-i">
+                        <div class="digi-div">Ultrasonic Sensor :</div>
+                        This sensor emits ultrasonic waves and measures the time it takes for the waves to bounce back
+                        after hitting an object, allowing distance calculation.
+                    </li>
+                    <li>
+                        <div class="digi-div">Arduino UNO :</div>It is responsible for processing the sensor data,
+                        performing calculations, and controlling the device's operation.
+                    </li>
+                    <li>
+                        <div class="digi-div">LCD Display(16*2) :</div>To show the measured distance or other relevant
+                        information.
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+<!-- ---------------new project------------------ -->
+            <div class="services-box">
+    <i class='bx bx-bolt'></i>
+    <h3>DYNAMIC WIRELESS EV CHARGING</h3>
+    <p>
+        Designed a wireless charging system for electric vehicles using electromagnetic induction.
+        Focused on efficient energy transfer and real-time charging capabilities.
+    </p>
+</div>
+<!-- ---------------------------------------------------------------------- -->
+
+<div class="services-box">
+    <i class='bx bx-cart'></i>
+    <h3>E-COMMERCE WEBSITE</h3>
+    <p>
+        Developed a responsive e-commerce website using HTML, CSS, and JavaScript.
+        Implemented product browsing and checkout interface.
+    </p>
+    <a href="https://ashwinthjaiganesh.github.io/ecom/">
+        <i class='bx bx-link-external'></i>
+    </a>
+</div>
+      <!-- --------------------------------------------------------------------------------       -->
+            <div class="services-box">
+                <i class='bx bx-bell-minus'></i>
+                <h3>GAS DETECTION SYSTEM</h3>
+                <p id="wed">Gas leak detection is the process of identifying potentially hazardous gas leaks by means of
+                    various sensors
+                    It acts as a part of a safety system
+                    These sensors usually employ an audible alarm to alert people when a dangerous gas has been
+                    detected.
+
+
+
+                <ul class="web-ul">
+                    <h2 class="web-h2"> Components Used : </h2>
+                    <li class="web-li">
+                        <div class="web-div">Arduino UNO :
+                        </div>
+                        It is responsible for processing the sensor data,
+                        performing calculations, and controlling the device's operation.
+                    </li>
+                    <li>
+                        <div class="web-div">MQ-2 Gas Sensor :</div>
+                        It can detect multiple gases.It's sensing is based on the charge in
+                        resistance of the sensing material when exposed to gasses.
+                    </li>
+
+                    <li>
+                        <div class="web-div">LED :
+                        </div>It is used to provide visual warning signals
+                        when gas levels exceed predefined thresholds.
+                    </li>
+
+                    <li>
+                        <div class="web-div">BUZZER :
+                        </div>
+                        To provide audible and visual warnings when gas levels exceed preset
+                        thresholds.
+
+
+                    </li>
+
+                </ul>
+
+
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- service section design -->
+
+    <!-- Portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Interactive Portfolio</h4>
+                    <p>
+                        I have developed a web page using HTML, CSS, and JavaScript
+                        that serves as my portfolio. The page features numerous
+                        animations to enhance the user experience and create an
+                        interactive interface.</p>
+                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+
+
+            <div class="portfolio-box">
+                <img src="portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Portfolio</h4>
+                    <p>Designed and developed portfolio website using HTML and CSS,
+                        featuring an interactive interface.
+                        Discover my projects and expertise presented in an engaging and
+                        visually captivating portfolio website.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/basic-portfolio/"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Ecommerce Websit</h4>
+                    <p>Crafted a visually appealing website using HTML,
+                        CSS, and JavaScript. Implemented a user-friendly interface with
+                        an engaging design elements and Streamlined checkout process for
+                        a smooth user experience.</p>
+                    <a href="https://ashwinthjaiganesh.github.io/ecom/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Login-Page</h4>
+                    <p> Bulit a Login-page using HTML, CSS and JS
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/login-page/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Front-end web development project</h4>
+                    <p> Bulit a website using HTML and CSS implementing the user
+                        interface.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/front-end-pro/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Front-end web development project</h4>
+                    <p> Bulit a website using HTML and CSS implementing the user
+                        interface.
+                    </p>
+                    <a href="https://ashwinthjaiganesh.github.io/login-page/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+<!-- ----------------------------------------------------------------------------------------------------->
+<section class="services" id="experience">
+    <h2 class="heading">Experience</h2>
+
+    <div class="services-container">
+
+        <div class="services-box">
+            <h3>Capgemini</h3>
+            <p>
+                Software Engineer – Maximo <br>
+                Apr 2025 – Present <br>
+                Working on IBM Maximo EAM, handling incidents, SQL debugging, and system support.
+            </p>
+        </div>
+
+        <div class="services-box">
+            <h3>Illumine Industries</h3>
+            <p>
+                Solar Design Engineer <br>
+                Mar 2024 – Apr 2025 <br>
+                Designed residential solar systems using BricsCAD.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- ---------------------------------------------------------------------------------------     -->
+    
+    <section class="services" id="academics">
+        <h2 class="heading">Academic <span>Achievements!</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>Degree</h3>
+               <p>
+Bachelor of Engineering (BE) <br>
+Electrical and Electronics Engineering <br>
+Chennai Institute of Technology <br>
+2020 – 2024 <br>
+<b>CGPA: 8.55</b>
+</p>
+
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-school'></i>
+                <h3>HSC</h3>
+                <p>
+                    I did my 11th and 12th grade at <br>
+                    <b>DRBCCC</b> <br>Hindu Higher Secondary School, <br>
+                    Thiruvallur. <br>specialized in Bio-Maths.
+                    <br>I achieved an overall
+                    percentage of 61. <br>
+                    % MARKS : 61
+
+
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-book-open'></i>
+                <h3>SSLC</h3>
+                <p>I studied in <br> <b>St Mary's Matriculation <br>
+                        Higher Secondary School</b>,<br> Sriperumbudur, &nbsp;
+                    Kanchipuram. <br>
+                    studied there until 10th grade. <br>
+                    I achieved an overall percentage of 87.4 <br>
+                    % MARKS: 87.4
+                </p>
+
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="skillstrength">
+        <div class="about-img">
+            <img class="ash" src="ASHWINTH.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>My</span></h2>
+            <h3> Strength and Skills...</h3>
+            <p id="about-my" class="about-my">
+            <h3 id="skill-h3" class="skill-class">Strength<span>'s</span></h3>
+
+            <div id="strength-p">
+                <ul id="strength-ul">
+                    <li>I have tendency to withstand any changes in my
+                        environment.
+                    </li>
+                    <li>I am versed in understanding core
+                        concepts and implementing it.</li>
+                    <li> I maintain a comfortable workspace around me
+                        and for my colleags.</li>
+                    <li>Teamwork and collaboration</li>
+                    <li>Time management</li>
+                    <li>Positive attitude</li>
+                </ul>
+            </div>
+            <br>
+            <!-- <br> -->
+            <ul id="skill-id">
+                <h3 id="skill-h3">Skills <span>'s</span></h3>
+<li>IBM Maximo EAM</li>
+<li>Oracle SQL / MySQL</li>
+<li>Core Java</li>
+<li>HTML, CSS, JavaScript</li>
+<li>Git & GitHub</li>
+<li>VS Code / Eclipse</li>
+<li>BricsCAD</li>
+<li>Problem Solving</li>
+<li>Team Collaboration</li>
+<li>Communication</li>
+                <br>
+            </ul>
+            <ul id="skill-id">
+                <h3 id="skill-h3">Certificatoin <span>'s</span></h3>
+                <li> I completed a course in core java, and I have a very good
+                    knowledge on Basic Java, OOPs concept and DSA. </li>
+            </ul>
+            </p>
+            <!-- <a href="#about-me" class="btn" onclick="toggleVisibility(this)"><span id="button-text">Read More</span></a> -->
+        </div>
+    </section>
+<!-- ---------------------------------------------------certification------------------------- -->
+
+<section class="services" id="certifications">
+    <h2 class="heading">Certifications</h2>
+
+    <div class="services-container">
+
+        <div class="services-box">
+            <h3>SQL Masterclass 2025</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/15%20days%20of%20SQL.pdf">View</a>
+        </div>
+
+        <div class="services-box">
+            <h3>Maximo & OpenShift Deployment</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/MAS%20_%20RHOCP%20Deployment%20Technical%20_Course%20completion%20certificate.pdf">View</a>
+        </div>
+
+        <div class="services-box">
+            <h3>Business Communication</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Master%20business%20email%20writing.pdf">View</a>
+        </div>
+
+        <div class="services-box">
+            <h3>Maximo Application Suite Intro</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Application%20Suite%20Introduction%202024%20_Course%20completion%20certificate.pdf">View</a>
+        </div>
+
+        <div class="services-box">
+            <h3>Maximo Planning & Scheduling</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Manage%20Introduction%20to%20Planning%20and%20Scheduling_Course%20completion%20certificate.pdf">View</a>
+        </div>
+
+        <div class="services-box">
+            <h3>Maximo Mobile Training</h3>
+            <a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Mobile%20Technicians%20Training_Course%20completion%20certificate.pdf">View</a>
+        </div>
+
+    </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="fade">
-<h2 class="heading">Experience</h2>
 
-<div class="grid">
-<div class="card">
-<h3>Capgemini</h3>
-<p>Software Engineer – Maximo</p>
-<p>Apr 2025 – Present</p>
-</div>
+    <!-- ---------------------------------------------------------------------------------- -->
 
-<div class="card">
-<h3>Illumine</h3>
-<p>Solar Design Engineer</p>
-<p>Mar 2024 – Apr 2025</p>
-</div>
-</div>
-</section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="send_message.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
 
-<!-- WORKFLOW -->
-<section id="workflow" class="fade">
-<h2 class="heading">Maximo Workflow</h2>
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
 
-<div class="grid">
-<div class="card">Issue Reported</div>
-<div class="card">Analysis</div>
-<div class="card">SQL Debugging</div>
-<div class="card">Fix Applied</div>
-<div class="card">Validation</div>
-</div>
-</section>
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="fade">
-<h2 class="heading">Projects</h2>
 
-<div class="grid">
-<div class="card">IoT Automation</div>
-<div class="card">Distance Measuring Device</div>
-<div class="card">Dynamic Wireless EV Charging</div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Contact &nbsp;: &nbsp; ashwinthjaiganesh2965@gmail.com | ashwinthm.eee2020@citchennai.net</p> <br>
+            <p>Copyrigth &copy; 2023 by Ashwinth | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i> </a>
+        </div>
+    </footer>
 
-<div class="card">
-E-commerce Website  
-<br>
-<a href="https://ashwinthjaiganesh.github.io/ecom/" target="_blank">View Project</a>
-</div>
-</div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills" class="fade">
-<h2 class="heading">Skills</h2>
+    <!-- ---------scroll reveal--------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<div class="grid">
-<div class="card">HTML, CSS, JavaScript</div>
-<div class="card">Core Java</div>
-<div class="card">Oracle SQL, MySQL</div>
-<div class="card">Git, GitHub</div>
-<div class="card">VS Code, Eclipse</div>
-<div class="card">BricsCAD</div>
-</div>
-</section>
+    <!-- -------------typed JS--------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="fade">
-<h2 class="heading">Certifications</h2>
-
-<ul>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/15%20days%20of%20SQL.pdf">SQL Masterclass</a></li>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/MAS%20_%20RHOCP%20Deployment%20Technical%20_Course%20completion%20certificate.pdf">Maximo & OpenShift</a></li>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Master%20business%20email%20writing.pdf">Business Communication</a></li>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Application%20Suite%20Introduction%202024%20_Course%20completion%20certificate.pdf">Maximo Intro</a></li>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Manage%20Introduction%20to%20Planning%20and%20Scheduling_Course%20completion%20certificate.pdf">Planning & Scheduling</a></li>
-<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Mobile%20Technicians%20Training_Course%20completion%20certificate.pdf">Maximo Mobile</a></li>
-</ul>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="fade">
-<h2 class="heading">Education</h2>
-
-<div class="card">
-B.E Electrical & Electronics Engineering  
-Chennai Institute of Technology  
-CGPA: 8.55  
-(2020 – 2024)
-</div>
-</section>
-
-<script src="script.js"></script>
+    <!-- custom JS -->
+    <script src="port.js"></script>
 </body>
+
 </html>
