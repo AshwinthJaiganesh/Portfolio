@@ -126,3 +126,14 @@ function closePopup() {
     popup.style.display = 'none';
 }
 
+// -------------------new-------------
+function downloadCertificate(link) {
+    var rawLink = link.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+    
+    const a = document.createElement('a');
+    a.href = rawLink;
+    a.download = '';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
