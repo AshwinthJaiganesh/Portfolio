@@ -60,8 +60,16 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ------------typed JS----------------------
+// const typed = new Typed('.multiple-text', {
+//     strings: ['Web Developer!', 'Java Programmer!'],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
+// --------------------Updated-----------------------------------------
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer!', 'Java Programmer!'],
+    strings: ['IBM Maximo (EAM)', 'EAM Specialist', 'SQL Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
