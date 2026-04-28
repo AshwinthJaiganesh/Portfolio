@@ -719,3 +719,23 @@ these changes occur in the website */
 #certifications .services-box {
     cursor: pointer;
 }
+
+/* Increase text size ONLY for experience section */
+.experience .services-box ul {
+    font-size: 1.8rem;
+    line-height: 1.9;
+}
+
+.experience .services-box li {
+    margin-bottom: 1rem;
+}
+
+/* Increase heading slightly */
+.experience .services-box h3 {
+    font-size: 2.8rem;
+}
+
+.experience .services-box {
+    text-align: left;   /* better for bullet points */
+}
+
