@@ -720,22 +720,23 @@ these changes occur in the website */
     cursor: pointer;
 }
 
-/* Increase text size ONLY for experience section */
+/* Experience section FIXED */
+
+.experience .services-box h3 {
+    font-size: 2.6rem;   /* match other card titles */
+    font-weight: 600;
+}
+
+.experience .services-box p {
+    font-size: 1.6rem;   /* same as project descriptions */
+    line-height: 1.6;
+}
+
 .experience .services-box ul {
-    font-size: 1.8rem;
-    line-height: 1.9;
+    font-size: 1.6rem;   /* reduce from 1.8rem */
+    line-height: 1.7;    /* tighter & cleaner */
 }
 
 .experience .services-box li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
-
-/* Increase heading slightly */
-.experience .services-box h3 {
-    font-size: 2.8rem;
-}
-
-.experience .services-box {
-    text-align: left;   /* better for bullet points */
-}
-
