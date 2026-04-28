@@ -715,3 +715,7 @@ these changes occur in the website */
 
 
 }
+/* -------------------certificate----------------*/
+#certifications .services-box {
+    cursor: pointer;
+}
