@@ -715,3 +715,9 @@ these changes occur in the website */
 
 
 }
+
+/* -----------------updated------------------- */
+section {
+    min-height: auto;
+    padding: 10rem 9% 5rem;
+}
