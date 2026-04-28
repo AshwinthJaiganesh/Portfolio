@@ -12,166 +12,120 @@
 <body>
 
 <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-
-    <i class='bx bx-menu' id="menu-icon"></i>
-    <i class='bx bx-moon' id="theme-toggle"></i>
+    <h2>Ashwinth</h2>
 
     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
+        <a href="#home">Home</a>
         <a href="#experience">Experience</a>
-        <a href="#case-study">Case Study</a>
-        <a href="#services">Projects</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
     </nav>
+
+    <button id="theme-btn">🌙</button>
 </header>
 
 <!-- HOME -->
-<section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, I'm</h3>
-        <h1>ASHWINTH M</h1>
-        <h3>Software Engineer – <span class="multiple-text"></span></h3>
+<section id="home" class="fade">
+<h1>ASHWINTH M</h1>
+<h3>Software Engineer – IBM Maximo</h3>
+<p>Specialized in Maximo EAM, SQL troubleshooting and enterprise systems.</p>
 
-        <p>
-            Software Engineer specializing in IBM Maximo EAM with experience in
-            application support, incident resolution, and SQL-based troubleshooting.
-        </p>
-
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/ashwinthm/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/AshwinthJaiganesh"><i class='bx bxl-github'></i></a>
-            <a href="mailto:ashwinthjaiganesh2965@gmail.com"><i class='bx bx-envelope'></i></a>
-        </div>
-
-        <a href="https://raw.githubusercontent.com/AshwinthJaiganesh/Portfolio/main/ASHWINTH_M_RESUME.pdf"
-           class="btn" target="_blank">Download Resume</a>
-    </div>
-
-    <div class="home-img">
-        <img src="Ashwinth-home1.png" alt="">
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-    <div class="about-img">
-        <img src="Ashwinth-home.png" alt="">
-    </div>
-
-    <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <p>
-            I am a Software Engineer at Capgemini working on IBM Maximo EAM.
-            I handle production incidents, perform SQL troubleshooting, and support
-            enterprise asset management systems.
-
-            Previously worked in solar design using BricsCAD for residential systems.
-        </p>
-    </div>
+<a href="https://raw.githubusercontent.com/AshwinthJaiganesh/Portfolio/main/ASHWINTH_M_RESUME.pdf"
+class="btn">Download Resume</a>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="services" id="experience">
-    <h2 class="heading">Professional <span>Experience</span></h2>
+<section id="experience" class="fade">
+<h2 class="heading">Experience</h2>
 
-    <div class="services-container">
-        <div class="services-box">
-            <h3>Capgemini</h3>
-            <p>IBM Maximo support, SQL troubleshooting, ticket resolution.</p>
-        </div>
+<div class="grid">
+<div class="card">
+<h3>Capgemini</h3>
+<p>Software Engineer – Maximo</p>
+<p>Apr 2025 – Present</p>
+</div>
 
-        <div class="services-box">
-            <h3>Illumine</h3>
-            <p>Solar PV design, load calculations, electrical layouts.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Illumine</h3>
+<p>Solar Design Engineer</p>
+<p>Mar 2024 – Apr 2025</p>
+</div>
+</div>
 </section>
 
-<!-- CASE STUDY -->
-<section class="services" id="case-study">
-    <h2 class="heading">Maximo <span>Case Study</span></h2>
+<!-- WORKFLOW -->
+<section id="workflow" class="fade">
+<h2 class="heading">Maximo Workflow</h2>
 
-    <div class="services-container">
-        <div class="services-box">
-            <h3>Incident Resolution</h3>
-            <p>Handled production issues and root cause analysis.</p>
-        </div>
-
-        <div class="services-box">
-            <h3>Work Order Support</h3>
-            <p>Maintained smooth work order lifecycle operations.</p>
-        </div>
-
-        <div class="services-box">
-            <h3>SQL Debugging</h3>
-            <p>Used SQL for backend validation and troubleshooting.</p>
-        </div>
-    </div>
+<div class="grid">
+<div class="card">Issue Reported</div>
+<div class="card">Analysis</div>
+<div class="card">SQL Debugging</div>
+<div class="card">Fix Applied</div>
+<div class="card">Validation</div>
+</div>
 </section>
 
 <!-- PROJECTS -->
-<section class="services" id="services">
-    <h2 class="heading">Projects</h2>
+<section id="projects" class="fade">
+<h2 class="heading">Projects</h2>
 
-    <div class="services-container">
+<div class="grid">
+<div class="card">IoT Automation</div>
+<div class="card">Distance Measuring Device</div>
+<div class="card">Dynamic Wireless EV Charging</div>
 
-        <div class="services-box" onclick="openPopup('iot')">
-            <h3>IoT Automation</h3>
-            <p>Click to view</p>
-        </div>
-
-        <div class="services-box" onclick="openPopup('distance')">
-            <h3>Distance Device</h3>
-            <p>Click to view</p>
-        </div>
-
-        <div class="services-box" onclick="openPopup('gas')">
-            <h3>Gas Detection</h3>
-            <p>Click to view</p>
-        </div>
-
-    </div>
+<div class="card">
+E-commerce Website  
+<br>
+<a href="https://ashwinthjaiganesh.github.io/ecom/" target="_blank">View Project</a>
+</div>
+</div>
 </section>
 
 <!-- SKILLS -->
-<section class="services" id="skills">
-    <h2 class="heading">Skills</h2>
+<section id="skills" class="fade">
+<h2 class="heading">Skills</h2>
 
-    <div class="services-container">
-        <div class="services-box"><p>IBM Maximo</p></div>
-        <div class="services-box"><p>SQL / PL-SQL</p></div>
-        <div class="services-box"><p>Java</p></div>
-        <div class="services-box"><p>JavaScript</p></div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contact</h2>
-
-    <form action="https://formspree.io/f/mknlorwk" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message"></textarea>
-        <input type="submit" value="Send" class="btn">
-    </form>
-</section>
-
-<!-- POPUP -->
-<div id="popup-overlay">
-    <div class="popup-box">
-        <h2 id="popup-heading"></h2>
-        <p id="popup-description"></p>
-        <button onclick="closePopup()" class="btn">Close</button>
-    </div>
+<div class="grid">
+<div class="card">HTML, CSS, JavaScript</div>
+<div class="card">Core Java</div>
+<div class="card">Oracle SQL, MySQL</div>
+<div class="card">Git, GitHub</div>
+<div class="card">VS Code, Eclipse</div>
+<div class="card">BricsCAD</div>
 </div>
+</section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="port.js"></script>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="fade">
+<h2 class="heading">Certifications</h2>
 
+<ul>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/15%20days%20of%20SQL.pdf">SQL Masterclass</a></li>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/MAS%20_%20RHOCP%20Deployment%20Technical%20_Course%20completion%20certificate.pdf">Maximo & OpenShift</a></li>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Master%20business%20email%20writing.pdf">Business Communication</a></li>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Application%20Suite%20Introduction%202024%20_Course%20completion%20certificate.pdf">Maximo Intro</a></li>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Manage%20Introduction%20to%20Planning%20and%20Scheduling_Course%20completion%20certificate.pdf">Planning & Scheduling</a></li>
+<li><a href="https://github.com/AshwinthJaiganesh/Portfolio/blob/main/Maximo%20Mobile%20Technicians%20Training_Course%20completion%20certificate.pdf">Maximo Mobile</a></li>
+</ul>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="fade">
+<h2 class="heading">Education</h2>
+
+<div class="card">
+B.E Electrical & Electronics Engineering  
+Chennai Institute of Technology  
+CGPA: 8.55  
+(2020 – 2024)
+</div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
